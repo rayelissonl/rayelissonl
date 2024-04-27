@@ -82,8 +82,8 @@ const anmol = {
 <hr>
 <h2 >⚡ Stats ⚡</h2>
 <br>
- <img  height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rayelissonl&theme=dark&layout=compact" />
- <img  height="165em" src="https://github-readme-stats.vercel.app/api?username=rayelissonl&theme=dark&show_icons=true" />
+ <img  height="130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rayelissonl&theme=dark&layout=compact" />
+ <img  height="130em" src="https://github-readme-stats.vercel.app/api?username=rayelissonl&theme=dark&show_icons=true" />
 <hr>
     
      
