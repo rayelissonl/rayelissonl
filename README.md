@@ -15,7 +15,7 @@ class DevAnalyst:
     def __init__(self):
         self.name = "Rayelisson Lima"
         self.role = ["Dev. Backend", "Data Science"],
-        self.language = ["Python", "Ruby on Rails"]
+        self.language = ["Python", "Ruby"]
 
     def say_hi(self):
          print("Thanks for stopping by.")
@@ -29,7 +29,7 @@ me.say_hi()
 const anmol = {
     technologies: {
         backEnd: {          
-               framework: ["Node", "Express","Django", "Flask" ],
+               framework: ["Node", "Express","Django", "Flask", "Ruby on Rails" ],
                databases: ["Mongo", "PostgreSQL"]
               },
        devOps: {
@@ -44,6 +44,9 @@ const anmol = {
     };
 
 ```
+
+## 📚 Minha Trajetória de Aprendizado
+### 🔬 Desenvolvimento Backend
 
 <!-- START OF PROFILE STACK, DO NOT REMOVE -->
 | 💻 **Technology** | 🚀 **Projects** |
@@ -95,4 +98,5 @@ const anmol = {
 
  <a href="https://www.linkedin.com/in/rayelisson-lima-74085162/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
       <a href="https://www.kaggle.com/rayelissonlima" target="_blank"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" target="_blank"></a>
+      **![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)**
 </div>
