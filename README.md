@@ -1,4 +1,5 @@
 # 👨🏻‍💻 [Rayelisson Lima]() [@rayelisson]()
+🤝 Estou procurando ajuda para aprender sobre Machine Learning e Back-End.
 
 [![GitHub followers](https://img.shields.io/github/followers/Rayelisson?label=Follow&style=social)](https://github.com/Rayelisson/?tab=follow)
 [![Gmail Badge](https://img.shields.io/badge/-rayelissonl@gmail.com-c14438?style=social&logo=Gmail&logoColor=red&link=mailto:email@anuragsingh.dev)](mailto:rayelissonl@gmail.com)
