@@ -47,7 +47,7 @@ const anmol = {
 ```
 
 ## 📚 Minha Trajetória de Aprendizado
-### 🔬 Desenvolvimento Backend
+### 🖥️ Desenvolvimento Backend
 
 <!-- START OF PROFILE STACK, DO NOT REMOVE -->
 | 💻 **Technology** | 🚀 **Projects** |
