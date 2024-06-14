@@ -87,7 +87,7 @@ const anmol = {
 <hr>
 <h2 >⚡ Stats ⚡</h2>
 <br>
- <img  height="130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rayelisson&theme=dark&layout=compact" />
+ <img  height="130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rayelissonl&theme=dark&layout=compact" />
  <img  height="130em" src="https://github-readme-stats.vercel.app/api?username=rayelissonl&theme=dark&show_icons=true" />
 <hr>
     
@@ -99,5 +99,5 @@ const anmol = {
 
  <a href="https://www.linkedin.com/in/rayelisson-lima-74085162/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
       <a href="https://www.kaggle.com/rayelissonlima" target="_blank"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" target="_blank"></a>
-      **![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)**
+      
 </div>
