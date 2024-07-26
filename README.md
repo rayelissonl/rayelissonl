@@ -16,7 +16,7 @@ class DevAnalyst:
     def __init__(self):
         self.name = "Rayelisson Lima"
         self.role = ["Dev. Backend", "Data Science"],
-        self.language = ["Python", "Ruby"]
+        self.language = ["Python", "Go"]
 
     def say_hi(self):
          print("Thanks for stopping by.")
@@ -30,15 +30,13 @@ me.say_hi()
 const anmol = {
     technologies: {
         backEnd: {          
-               framework: ["Node", "Express","Django", "Flask", "Ruby on Rails" ],
+               linguagem: ["Python", "Golang" ],
                databases: ["Mongo", "PostgreSQL"]
               },
        devOps: {
            ["AWS", "Docker ", "Git","Github"],  
           },
-     dados: {
-               ["Power-Bi","Databricks","Scikit-learn","Pandas","Tensorflow","Pytorch","Numpy"]
-          },
+
        metricsAgil: {
              ["Scrum", "Kanban"],
           },  
