@@ -15,7 +15,7 @@ class DevAnalyst:
 
     def __init__(self):
         self.name = "Rayelisson Lima"
-        self.role = ["Dev. Backend", "Data Science"],
+        self.role = ["Dev.Backend"],
         self.language = ["Python", "Go"]
 
     def say_hi(self):
