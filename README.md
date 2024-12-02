@@ -7,40 +7,41 @@
 
 <img align="right" width="420" src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" />
 
-```python
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+```ruby
+class DevAnalyst
+  attr_reader :name, :role, :languages, :frameworks, :databases, :dev_ops_tools, :methodologies
 
-class DevAnalyst:
+  def initialize
+    @name = "Rayelisson Lima"
+    @role = "Dev. Backend"
+    @languages = ["Elixir", "Ruby", "Go"]
+    @frameworks = {
+      "Elixir" => ["Phoenix"],
+      "Ruby" => ["Rails"],
+      "Go" => ["Gin"]
+    }
+    @databases = ["PostgreSQL", "MongoDB"]
+    @dev_ops_tools = ["AWS", "Docker", "Git", "GitHub"]
+    @methodologies = ["Scrum", "Kanban"]
+  end
 
-    def __init__(self):
-        self.name = "Rayelisson Lima"
-        self.role = ["Dev.Backend"],
-        self.language = ["Python", "Go"]
+  def introduce
+    puts "Hi, I'm #{name}, a #{role}."
+    puts "Here's what I specialize in:"
+    puts "Languages: #{languages.join(', ')}"
+    puts "Frameworks:"
+    frameworks.each do |lang, fwks|
+      puts "  #{lang}: #{fwks.join(', ')}"
+    end
+    puts "Databases: #{databases.join(', ')}"
+    puts "DevOps Tools: #{dev_ops_tools.join(', ')}"
+    puts "Methodologies: #{methodologies.join(', ')}"
+  end
+end
 
-    def say_hi(self):
-         print("Thanks for stopping by.")
-
-
-me = DevAnalyst()
-me.say_hi()
-```
-
-```javascript
-const anmol = {
-    technologies: {
-        backEnd: {          
-               linguagem: ["Python", "Golang" ],
-               databases: ["Mongo", "PostgreSQL"]
-              },
-       devOps: {
-           ["AWS", "Docker ", "Git","Github"],  
-          },
-
-       metricsAgil: {
-             ["Scrum", "Kanban"],
-          },  
-    };
+# Instantiate and display the introduction
+dev_analyst = DevAnalyst.new
+dev_analyst.introduce
 
 ```
 
