@@ -10,7 +10,7 @@
 ```ruby
 class DevAnalyst
   attr_reader :name, :role, :languages, :frameworks,
-databases, :dev_ops_tools, :methodologies
+             :databases, :dev_ops_tools, :methodologies
 
   def initialize
     @name = "Rayelisson Lima"
