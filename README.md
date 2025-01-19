@@ -18,7 +18,8 @@ defmodule DevAnalyst do
               "Go" => ["Gin"]
             },
             databases: ["PostgreSQL", "MongoDB"],
-            dev_ops_tools: ["AWS", "Docker", "Git", "GitHub"],
+            dev_ops_tools: ["AWS", "Docker", "Git", "GitHub", "Kubernetes", "Sidekiq"],
+            messaging_queues: ["Kafka", "RabbitMQ"],
             methodologies: ["Scrum", "Kanban"]
 
   def introduce(%__MODULE__{} = dev_analyst) do
@@ -33,6 +34,7 @@ defmodule DevAnalyst do
 
     IO.puts("Databases: #{Enum.join(dev_analyst.databases, ", ")}")
     IO.puts("DevOps Tools: #{Enum.join(dev_analyst.dev_ops_tools, ", ")}")
+    IO.puts("Messaging Queues: #{Enum.join(dev_analyst.messaging_queues, ", ")}")
     IO.puts("Methodologies: #{Enum.join(dev_analyst.methodologies, ", ")}")
   end
 end
