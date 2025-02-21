@@ -11,11 +11,12 @@
 defmodule DevAnalyst do
   defstruct name: "Rayelisson Lima",
             role: "Dev. Backend",
-            languages: ["Elixir", "Ruby", "Go"],
+            languages: ["Elixir", "Ruby", "Go", "Python"],
             frameworks: %{
               "Elixir" => ["Phoenix"],
               "Ruby" => ["Rails"],
-              "Go" => ["Gin"]
+              "Go" => ["Gin"],
+              "Python" => ["Django", "FastAPI"]
             },
             databases: ["PostgreSQL", "MongoDB"],
             dev_ops_tools: ["AWS", "Docker", "Git", "GitHub", "Kubernetes", "Sidekiq"],
@@ -42,6 +43,7 @@ end
 # Instanciar e exibir a introdução
 dev_analyst = %DevAnalyst{}
 DevAnalyst.introduce(dev_analyst)
+
 
 
 ```
