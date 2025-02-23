@@ -11,12 +11,12 @@
 defmodule DevAnalyst do
   defstruct name: "Rayelisson Lima",
             role: "Dev. Backend",
-            languages: ["Elixir", "Ruby", "Go", "Python"],
+            languages: ["Elixir","Python","Go","Node"],
             frameworks: %{
               "Elixir" => ["Phoenix"],
-              "Ruby" => ["Rails"],
+              "Python" => ["Django", "FastAPI"],
               "Go" => ["Gin"],
-              "Python" => ["Django", "FastAPI"]
+              "Node" => ["Nest.js","Express"]
             },
             databases: ["PostgreSQL", "MongoDB"],
             dev_ops_tools: ["AWS", "Docker", "Git", "GitHub", "Kubernetes", "Sidekiq"],
