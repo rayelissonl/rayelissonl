@@ -47,11 +47,9 @@ DevAnalyst.introduce(dev_analyst)
 
 
 ```
-
+<!--
 ## 📚 Minha Trajetória de Aprendizado
 ### 🧪 Desenvolvimento Backend
-
-<!-- START OF PROFILE STACK, DO NOT REMOVE -->
 | 💻 **Technology** | 🚀 **Projects** |
 | - | - |
 | [![Elixir](https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white)](https://www.gnu.org/)| [![webryseg](https://img.shields.io/static/v1?label=&message=webryseg&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/rayelissonl/webryseg) [![banana_bankk](https://img.shields.io/static/v1?label=&message=banana_bankk&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/notion-interactive-brokers) [![notion-habit-tracker](https://img.shields.io/static/v1?label=&message=notion-habit-tracker&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/notion-habit-tracker) [![hackclubnmit/certificate-generator](https://img.shields.io/static/v1?label=&message=certificate-generator&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/hackclubnmit/certificate-generator) [![todo-cli](https://img.shields.io/static/v1?label=&message=todo-cli&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/todo-cli) [![option-chain-notifier](https://img.shields.io/static/v1?label=&message=option-chain-notifier&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/option-chain-notifier) |
@@ -75,6 +73,7 @@ DevAnalyst.introduce(dev_analyst)
 | [![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white) ](https://www.gnu.org/) | [![dotfiles-public](https://img.shields.io/static/v1?label=&message=dotfiles-public&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/dotfiles-public) |
 | [![rabbitmq](https://img.shields.io/badge/-rabbitmq-%23FF6600?style=flat&logo=rabbitmq&logoColor=white) ](https://www.gnu.org/) | [![dotfiles-public](https://img.shields.io/static/v1?label=&message=dotfiles-public&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/dotfiles-public) |
 | [![Problem solving](https://img.shields.io/static/v1?label=&message=Problem%20solving&color=FFA116&logo=LeetCode&logoColor=FFFFFF)](https://hackattic.com/u/ashleymavericks) | [![leetcoding](https://img.shields.io/static/v1?label=&message=leetcoding&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/leetcoding) [![hackerrank](https://img.shields.io/static/v1?label=&message=hackerrank&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/hackerrank) [![hackattic](https://img.shields.io/static/v1?label=&message=hackattic&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/hackattic) [![kata-log](https://img.shields.io/static/v1?label=&message=kata-log&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/kata-log) [![sadservers](https://img.shields.io/static/v1?label=&message=sadservers&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/sadservers) [![code.golf](https://img.shields.io/static/v1?label=&message=code.golf&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/code.golf) [![system-design](https://img.shields.io/static/v1?label=&message=system-design&color=000605&logo=github&logoColor=FFFFFF&labelColor=000605)](https://github.com/ashleymavericks/system-design) |
+-->
 <!-- END OF PROFILE STACK, DO NOT REMOVE -->
 <hr>
 
