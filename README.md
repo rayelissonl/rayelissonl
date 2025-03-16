@@ -19,7 +19,7 @@ defmodule DevAnalyst do
               "Node" => ["Nest.js","Express"]
             },
             databases: ["PostgreSQL", "MongoDB"],
-            dev_ops_tools: ["AWS", "Docker", "Git", "GitHub", "Kubernetes", "Sidekiq"],
+            dev_ops_tools: ["AWS", "Docker", "Git", "GitHub", "Kubernetes"],
             messaging_queues: ["Kafka", "RabbitMQ"],
             methodologies: ["Scrum", "Kanban"]
 
