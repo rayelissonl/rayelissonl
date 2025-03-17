@@ -5,7 +5,7 @@
 [![Gmail Badge](https://img.shields.io/badge/-rayelissonl@gmail.com-c14438?style=social&logo=Gmail&logoColor=red&link=mailto:email@anuragsingh.dev)](mailto:rayelissonl@gmail.com)
 [![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn-blue?style=social&logo=Linkedin&logoColor=blue&link=https://www.linkedin.com/in/rayelisson/)](https://www.linkedin.com/in/rayelisson/)
 
-<img align="right" width="330" src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" />
+<img align="right" width="300" src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" />
 
 ```elixir
 defmodule DevAnalyst do
