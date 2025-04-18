@@ -9,29 +9,29 @@
 
 ``` Fis
 
-defmodule DevAnalystWeb.PageController do
-  use DevAnalystWeb, :controller
-
-  def index(conn, _params) do
-    info = %{
+@Controller()
+class AppController {
+  @Get()
+  get() {
+    return {
       name: "Rayelisson Lima",
       role: "Dev. Backend",
-      languages: ~w(Elixir, Python, Go, Node),
-      frameworks: %{
-        "Elixir" => ["Phoenix"],
-        "Python" => ["Django", "FastAPI"],
-        "Go" => ["Gin"],
-        "Node" => ["Nest.js", "Express"]
-      },
-      databases: ["PostgreSQL", "MongoDB"],
-      dev_ops: ["AWS", "Docker", "Git", "GitHub", "Kubernetes"],
-      queues: ["Kafka", "RabbitMQ"],
-      methodologies: ["Scrum", "Kanban"]
-    }
-  end
-end
-
-
+      message: [
+        "Here's what I specialize in:",
+        "Languages: Go, Node, Python, Elixir",
+        "Frameworks:",
+        "  Go: Gin",
+        "  Node: Nest.js, Express",
+        "  Python: Django, FastAPI",
+        "  Elixir: Phoenix",
+        "Databases: PostgreSQL, MongoDB",
+        "DevOps: AWS, Docker, Git, GitHub, Kubernetes",
+        "Queues: Kafka, RabbitMQ",
+        "Methodologies: Scrum, Kanban"
+      ].join('\n')
+    };
+  }
+}
 
 ```
 
