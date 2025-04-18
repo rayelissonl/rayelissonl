@@ -16,7 +16,7 @@ defmodule DevAnalystWeb.PageController do
     info = %{
       name: "Rayelisson Lima",
       role: "Dev. Backend",
-      languages: ~w(Elixir Python Go Node),
+      languages: ~w(Elixir, Python, Go, Node),
       frameworks: %{
         "Elixir" => ["Phoenix"],
         "Python" => ["Django", "FastAPI"],
