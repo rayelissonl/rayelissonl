@@ -7,42 +7,51 @@
 
 
 
-```elixir
-defmodule DevAnalyst do
-  defstruct name: "Rayelisson Lima",
-            role: "Dev. Backend",
-            languages: ["Elixir","Python","Go","Node"],
-            frameworks: %{
-              "Elixir" => ["Phoenix"],
-              "Python" => ["Django", "FastAPI"],
-              "Go" => ["Gin"],
-              "Node" => ["Nest.js","Express"]
-            },
-            databases: ["PostgreSQL", "MongoDB"],
-            dev_ops_tools: ["AWS", "Docker", "Git", "GitHub", "Kubernetes"],
-            messaging_queues: ["Kafka", "RabbitMQ"],
-            methodologies: ["Scrum", "Kanban"]
+``` Fis
 
-  def introduce(%__MODULE__{} = dev_analyst) do
-    IO.puts("Hi, I'm #{dev_analyst.name}, a #{dev_analyst.role}.")
-    IO.puts("Here's what I specialize in:")
-    IO.puts("Languages: #{Enum.join(dev_analyst.languages, ", ")}")
+from fastapi import FastAPI
 
-    IO.puts("Frameworks:")
-    Enum.each(dev_analyst.frameworks, fn {lang, fwks} ->
-      IO.puts("  #{lang}: #{Enum.join(fwks, ", ")}")
-    end)
+app = FastAPI()
 
-    IO.puts("Databases: #{Enum.join(dev_analyst.databases, ", ")}")
-    IO.puts("DevOps Tools: #{Enum.join(dev_analyst.dev_ops_tools, ", ")}")
-    IO.puts("Messaging Queues: #{Enum.join(dev_analyst.messaging_queues, ", ")}")
-    IO.puts("Methodologies: #{Enum.join(dev_analyst.methodologies, ", ")}")
-  end
-end
+class DevAnalyst:
+    def __init__(self):
+        self.name = "Rayelisson Lima"
+        self.role = "Dev. Backend"
+        self.languages = ["Elixir", "Python", "Go", "Node"]
+        self.frameworks = {
+            "Elixir": ["Phoenix"],
+            "Python": ["Django", "FastAPI"],
+            "Go": ["Gin"],
+            "Node": ["Nest.js", "Express"]
+        }
+        self.databases = ["PostgreSQL", "MongoDB"]
+        self.dev_ops_tools = ["AWS", "Docker", "Git", "GitHub", "Kubernetes"]
+        self.messaging_queues = ["Kafka", "RabbitMQ"]
+        self.methodologies = ["Scrum", "Kanban"]
 
-# Instanciar e exibir a introdução
-dev_analyst = %DevAnalyst{}
-DevAnalyst.introduce(dev_analyst)
+    def introduce(self):
+        introduction = [
+            f"Hi, I'm {self.name}, a {self.role}.",
+            "Here's what I specialize in:",
+            f"Languages: {', '.join(self.languages)}",
+            "Frameworks:"
+        ]
+        for lang, fwks in self.frameworks.items():
+            introduction.append(f"  {lang}: {', '.join(fwks)}")
+        introduction.extend([
+            f"Databases: {', '.join(self.databases)}",
+            f"DevOps Tools: {', '.join(self.dev_ops_tools)}",
+            f"Messaging Queues: {', '.join(self.messaging_queues)}",
+            f"Methodologies: {', '.join(self.methodologies)}"
+        ])
+        return "\n".join(introduction)
+
+dev_analyst = DevAnalyst()
+
+@app.get("/")
+def read_root():
+    return {"message": dev_analyst.introduce()}
+
 
 ```
 
