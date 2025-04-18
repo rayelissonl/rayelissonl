@@ -9,48 +9,28 @@
 
 ``` Fis
 
-from fastapi import FastAPI
+defmodule DevAnalystWeb.PageController do
+  use DevAnalystWeb, :controller
 
-app = FastAPI()
+  def index(conn, _params) do
+    info = %{
+      name: "Rayelisson Lima",
+      role: "Dev. Backend",
+      languages: ~w(Elixir Python Go Node),
+      frameworks: %{
+        "Elixir" => ["Phoenix"],
+        "Python" => ["Django", "FastAPI"],
+        "Go" => ["Gin"],
+        "Node" => ["Nest.js", "Express"]
+      },
+      databases: ["PostgreSQL", "MongoDB"],
+      dev_ops: ["AWS", "Docker", "Git", "GitHub", "Kubernetes"],
+      queues: ["Kafka", "RabbitMQ"],
+      methodologies: ["Scrum", "Kanban"]
+    }
+  end
+end
 
-class DevAnalyst:
-    def __init__(self):
-        self.name = "Rayelisson Lima"
-        self.role = "Dev. Backend"
-        self.languages = ["Elixir", "Python", "Go", "Node"]
-        self.frameworks = {
-            "Elixir": ["Phoenix"],
-            "Python": ["Django", "FastAPI"],
-            "Go": ["Gin"],
-            "Node": ["Nest.js", "Express"]
-        }
-        self.databases = ["PostgreSQL", "MongoDB"]
-        self.dev_ops_tools = ["AWS", "Docker", "Git", "GitHub", "Kubernetes"]
-        self.messaging_queues = ["Kafka", "RabbitMQ"]
-        self.methodologies = ["Scrum", "Kanban"]
-
-    def introduce(self):
-        introduction = [
-            f"Hi, I'm {self.name}, a {self.role}.",
-            "Here's what I specialize in:",
-            f"Languages: {', '.join(self.languages)}",
-            "Frameworks:"
-        ]
-        for lang, fwks in self.frameworks.items():
-            introduction.append(f"  {lang}: {', '.join(fwks)}")
-        introduction.extend([
-            f"Databases: {', '.join(self.databases)}",
-            f"DevOps Tools: {', '.join(self.dev_ops_tools)}",
-            f"Messaging Queues: {', '.join(self.messaging_queues)}",
-            f"Methodologies: {', '.join(self.methodologies)}"
-        ])
-        return "\n".join(introduction)
-
-dev_analyst = DevAnalyst()
-
-@app.get("/")
-def read_root():
-    return {"message": dev_analyst.introduce()}
 
 
 ```
