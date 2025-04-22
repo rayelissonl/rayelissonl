@@ -9,29 +9,31 @@
 
 ``` Fis
 
-@Controller()
-class AppController {
-  @Get()
-  get() {
-    return {
-      name: "Rayelisson Lima",
-      role: "Dev. Backend",
-      message: [
-        "Here's what I specialize in:",
-        "Languages: Go, Node, Python, Elixir",
-        "Frameworks:",
-        "  Go: Gin",
-        "  Node: Nest.js, Express",
-        "  Python: Django, FastAPI",
-        "  Elixir: Phoenix",
-        "Databases: PostgreSQL, MongoDB",
-        "DevOps: AWS, Docker, Git, GitHub, Kubernetes",
-        "Queues: Kafka, RabbitMQ",
-        "Methodologies: Scrum, Kanban"
-      ].join('\n')
-    };
-  }
-}
+from fastapi import FastAPI
+from fastapi.responses import JSONResponse
+
+app = FastAPI()
+
+@app.get("/")
+def get():
+    return JSONResponse(content={
+        "name": "Rayelisson Lima",
+        "role": "Dev. Backend",
+        "message": "\n".join([
+            "Here's what I specialize in:",
+            "Languages: Go, Node, Python, Elixir",
+            "Frameworks:",
+            "  Go: Gin",
+            "  Node: Nest.js, Express",
+            "  Python: Django, FastAPI",
+            "  Elixir: Phoenix",
+            "Databases: PostgreSQL, MongoDB",
+            "DevOps: AWS, Docker, Git, GitHub, Kubernetes",
+            "Queues: Kafka, RabbitMQ",
+            "Methodologies: Scrum, Kanban"
+        ])
+    })
+
 
 ```
 
