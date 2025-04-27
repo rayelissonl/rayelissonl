@@ -7,7 +7,7 @@
 
 
 
-``` Fis
+```python
 
 defmodule DevInfoApiWeb.DevInfoController do
   use DevInfoApiWeb, :controller
