@@ -7,7 +7,7 @@
 
 
 
-```python
+```elixir
 
 defmodule DevInfoApiWeb.DevInfoController do
   use DevInfoApiWeb, :controller
