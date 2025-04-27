@@ -9,29 +9,41 @@
 
 ```elixir
 
-defmodule DevInfoApiWeb.DevInfoController do
-  use DevInfoApiWeb, :controller
+defmodule DevAnalyst do
+  defstruct name: "Rayelisson Lima",
+            role: "Dev. Backend",
+            languages: ["Python","Go","Node","Elixir"],
+            frameworks: %{
+              "Go" => ["Gin"],
+              "Python" => ["Django", "FastAPI"],
+              "Node" => ["Nest.js","Express"]
+              "Elixir" => ["Phoenix"],
+            },
+            databases: ["PostgreSQL", "MongoDB"],
+            dev_ops_tools: ["AWS", "Docker", "Git", "GitHub", "Kubernetes"],
+            messaging_queues: ["Kafka", "RabbitMQ"],
+            methodologies: ["Scrum", "Kanban"]
 
-  def index(conn, _params) do
-    json(conn, %{
-      "name" => "Rayelisson Lima",
-      "role" => "Dev. Backend",
-      "message" => Enum.join([
-        "Here's what I specialize in:",
-        "Languages: Go, Node, Python, Elixir",
-        "Frameworks:",
-        "  Go: Gin",
-        "  Node: Nest.js, Express",
-        "  Python: Django, FastAPI",
-        "  Elixir: Phoenix",
-        "Databases: PostgreSQL, MongoDB",
-        "DevOps: AWS, Docker, Git, GitHub, Kubernetes",
-        "Queues: Kafka, RabbitMQ",
-        "Methodologies: Scrum, Kanban"
-      ], "\n")
-    })
+  def introduce(%__MODULE__{} = dev_analyst) do
+    IO.puts("Hi, I'm #{dev_analyst.name}, a #{dev_analyst.role}.")
+    IO.puts("Here's what I specialize in:")
+    IO.puts("Languages: #{Enum.join(dev_analyst.languages, ", ")}")
+
+    IO.puts("Frameworks:")
+    Enum.each(dev_analyst.frameworks, fn {lang, fwks} ->
+      IO.puts("  #{lang}: #{Enum.join(fwks, ", ")}")
+    end)
+
+    IO.puts("Databases: #{Enum.join(dev_analyst.databases, ", ")}")
+    IO.puts("DevOps Tools: #{Enum.join(dev_analyst.dev_ops_tools, ", ")}")
+    IO.puts("Messaging Queues: #{Enum.join(dev_analyst.messaging_queues, ", ")}")
+    IO.puts("Methodologies: #{Enum.join(dev_analyst.methodologies, ", ")}")
   end
 end
+
+# Instanciar e exibir a introdução
+dev_analyst = %DevAnalyst{}
+DevAnalyst.introduce(dev_analyst)
 
 
 ```
