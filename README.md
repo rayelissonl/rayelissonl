@@ -9,30 +9,29 @@
 
 ``` Fis
 
-from fastapi import FastAPI
-from fastapi.responses import JSONResponse
+defmodule DevInfoApiWeb.DevInfoController do
+  use DevInfoApiWeb, :controller
 
-app = FastAPI()
-
-@app.get("/")
-def get():
-    return JSONResponse(content={
-        "name": "Rayelisson Lima",
-        "role": "Dev. Backend",
-        "message": "\n".join([
-            "Here's what I specialize in:",
-            "Languages: Go, Node, Python, Elixir",
-            "Frameworks:",
-            "  Go: Gin",
-            "  Node: Nest.js, Express",
-            "  Python: Django, FastAPI",
-            "  Elixir: Phoenix",
-            "Databases: PostgreSQL, MongoDB",
-            "DevOps: AWS, Docker, Git, GitHub, Kubernetes",
-            "Queues: Kafka, RabbitMQ",
-            "Methodologies: Scrum, Kanban"
-        ])
+  def index(conn, _params) do
+    json(conn, %{
+      "name" => "Rayelisson Lima",
+      "role" => "Dev. Backend",
+      "message" => Enum.join([
+        "Here's what I specialize in:",
+        "Languages: Go, Node, Python, Elixir",
+        "Frameworks:",
+        "  Go: Gin",
+        "  Node: Nest.js, Express",
+        "  Python: Django, FastAPI",
+        "  Elixir: Phoenix",
+        "Databases: PostgreSQL, MongoDB",
+        "DevOps: AWS, Docker, Git, GitHub, Kubernetes",
+        "Queues: Kafka, RabbitMQ",
+        "Methodologies: Scrum, Kanban"
+      ], "\n")
     })
+  end
+end
 
 
 ```
