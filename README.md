@@ -12,13 +12,14 @@
 defmodule DevAnalyst do
   defstruct name: "Rayelisson Lima",
             role: "Dev. Backend",
-            languages: ["Python","Go","Node","Elixir"],
+            languages: ["Python", "Go", "Node", "Elixir"],
             frameworks: %{
               "Go" => ["Gin"],
               "Python" => ["Django", "FastAPI"],
-              "Node" => ["Nest.js","Express"]
-              "Elixir" => ["Phoenix"],
+              "Node" => ["Nest.js", "Express"],
+              "Elixir" => ["Phoenix"]
             },
+            frontend_frameworks: ["Angular", "React (Next.js)"],
             databases: ["PostgreSQL", "MongoDB"],
             dev_ops_tools: ["AWS", "Docker", "Git", "GitHub", "Kubernetes"],
             messaging_queues: ["Kafka", "RabbitMQ"],
@@ -34,6 +35,7 @@ defmodule DevAnalyst do
       IO.puts("  #{lang}: #{Enum.join(fwks, ", ")}")
     end)
 
+    IO.puts("Frontend Frameworks: #{Enum.join(dev_analyst.frontend_frameworks, ", ")}")
     IO.puts("Databases: #{Enum.join(dev_analyst.databases, ", ")}")
     IO.puts("DevOps Tools: #{Enum.join(dev_analyst.dev_ops_tools, ", ")}")
     IO.puts("Messaging Queues: #{Enum.join(dev_analyst.messaging_queues, ", ")}")
@@ -44,6 +46,8 @@ end
 # Instanciar e exibir a introdução
 dev_analyst = %DevAnalyst{}
 DevAnalyst.introduce(dev_analyst)
+
+
 
 
 ```
